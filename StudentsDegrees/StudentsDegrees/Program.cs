@@ -30,7 +30,7 @@ namespace StudentsDegrees
             }
             else
             {
-                Console.WriteLine(" Found " + cont + " name(s)\n ");
+                Console.Write(" Found " + cont + " name(s)\n ");
             }
             Console.ReadKey();
             
@@ -91,9 +91,14 @@ namespace StudentsDegrees
                     }
                 }
             }
+            if (cont == 0)
+            {
+                Console.Write(" Student not found\n ");
+                goto end;
+            }
             Console.WriteLine(" -----------------------");
             Console.Write(" Changed " + cont + " name(s)\n ");
-            Console.ReadKey();
+end:        Console.ReadKey();
         }
         static void Main(string[] args)
         {
