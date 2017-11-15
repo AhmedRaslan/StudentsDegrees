@@ -30,7 +30,7 @@ namespace StudentsDegrees
             }
             else
             {
-                Console.WriteLine(" Found " + cont + " name(s)\n ");
+                Console.Write(" Found " + cont + " name(s)\n ");
             }
             Console.ReadKey();
             
